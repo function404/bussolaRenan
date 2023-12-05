@@ -1,5 +1,5 @@
-import { View, StyleSheet, Text } from "react-native";
-import { Button } from "react-native";
+import { View, StyleSheet, Text } from 'react-native';
+import { Button } from 'react-native';
 
 import Header from '../components/Header';
 
@@ -11,7 +11,7 @@ const HomeScreen = ({navigation}) => {
               <Text style={styles.titleText}>Equipe: Lincoln e Rogério</Text>
               <View style={styles.content}>              
                 <Text style={styles.subTitleText}>Veja a nossa Bússola</Text>
-                <Button style={styles.btn} title='bússola' onPress={() => navigation.navigate('Bussola')}/>
+                <Button style={styles.btn} title='bússola' onPress={() => navigation.navigate('Bússola')}/>
               </View>
           </View>
       </>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     titleText: {
       paddingTop: 35,
       fontSize: 20,
-      fontWeight: "bold",
+      fontWeight: 'bold',
     },
     content:{
       height: '70%',
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     subTitleText:{
       paddingBottom: 15,
       fontSize: 15,
-      fontWeight: "bold",
+      fontWeight: 'bold',
     },
     btn:{
       paddingTop: 15,

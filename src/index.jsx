@@ -11,7 +11,7 @@ const RootNavigation = ({navigation}) => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen name='Home' component={HomeScreen} options={{ headerShown: false }} />
-                <Stack.Screen name='Bussola' component={Bussola} options={{ headerShown: false }} />
+                <Stack.Screen name='Bússola' component={Bussola} options={{ headerShown: true }} />
             </Stack.Navigator>
         </NavigationContainer>
     )

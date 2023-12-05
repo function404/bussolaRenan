@@ -3,6 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Gyroscope } from 'expo-sensors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+import Localization from '../components/Localization';
+import Footer from '../components/footer';
+
 const Compass = () => {
   const [gyroscopeData, setGyroscopeData] = useState({});
   const [currentDirection, setCurrentDirection] = useState('Sem direção');
@@ -37,12 +40,17 @@ const Compass = () => {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.directionText}>{currentDirection}</Text>
-      <View style={styles.iconContainer}>
-        <Icon name={iconName} size={100} color="#000000" />
+    <>
+      <View style={styles.container}>
+        <Text style={styles.directionText}>{currentDirection}</Text>
+        <View style={styles.iconContainer}>
+          <Icon name={iconName} size={100} color="#000000" />
+        </View>
+        <View>
+          <Localization />
+        </View>
       </View>
-    </View>
+    </>
   );
 };
 
@@ -51,6 +59,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    paddingTop: '10%',
     backgroundColor: '#FFFFFF',
   },
   directionText: {

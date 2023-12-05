@@ -16,7 +16,7 @@ export default function Footer({ title }) {
     return (
         <View>
             <View style={styles.footer}>
-                <Button title={title} onPress={() => navigation.navigate('Home')} />
+                <Button title='Sair' onPress={() => navigation.navigate('Home')} />
             </View>
         </View>
     )
