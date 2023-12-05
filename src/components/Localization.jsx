@@ -4,9 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, Alert } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 
-import Header from '../components/Header';
-import Footer from '../components/footer';
-
 const Localization = ({ navigation }) => {
   const [location, setLocation] = useState(null);
 
